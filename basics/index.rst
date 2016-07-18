@@ -19,7 +19,7 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-* index2.rst
+* index.rst under basics
 * This is a bulleted list.
 * It has two items, the second
   item uses two lines.
