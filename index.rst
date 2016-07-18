@@ -31,3 +31,12 @@ Indices and tables
 #. This is a numbered list.
 #. It has two items too.
 
+
+=====  =====  =======
+A      B      A and B
+=====  =====  =======
+False  False  False
+True   False  False
+False  True   False
+True   True   True
+=====  =====  =======
