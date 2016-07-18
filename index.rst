@@ -9,11 +9,10 @@ Welcome to craftops's documentation!
 Contents:
 
 .. toctree::
-   :glob:
+   :maxdepth: 2
 
-   *
-   basics/*
-
+   install
+   support
 
 Indices and tables
 ==================
