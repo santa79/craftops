@@ -16,6 +16,13 @@ Contents:
    datatypes
    numeric
 
+.. toctree::
+   :numbered:
+
+   foo
+   bar
+
+
 
 
 Indices and tables
