@@ -11,9 +11,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   basics/install
-   basics/support
-   basics/cookbook
+   craftops/install
+   craftops/support
+   craftops/cookbook
 
 Indices and tables
 ==================
