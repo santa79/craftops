@@ -341,4 +341,4 @@ texinfo_documents = [
 #
 # texinfo_no_detailmenu = False
 
-disqus_shortname = 'craftops' 
+#disqus_shortname = 'craftops' 
