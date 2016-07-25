@@ -13,4 +13,3 @@ Or, if you have virtualenvwrapper installed:
     mkvirtualenv crawler
     pip install crawler
 
-.. disqus::
