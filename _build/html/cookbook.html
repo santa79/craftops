@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>색인 &mdash; craftops 0.0.0 documentation</title>
+  <title>Cookbook &mdash; craftops 0.0.0 documentation</title>
   
 
   
@@ -106,7 +105,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -114,9 +113,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Cookbook</li>
       <li class="wy-breadcrumbs-aside">
         
+          
+            <a href="_sources/cookbook.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -126,54 +127,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">색인</h1>
-
-<div class="genindex-jumpbox">
- <a href="#P"><strong>P</strong></a>
- | <a href="#R"><strong>R</strong></a>
- 
+  <div class="section" id="cookbook">
+<h1>Cookbook<a class="headerlink" href="#cookbook" title="제목 주소">¶</a></h1>
+<div class="section" id="crawl-a-web-page">
+<h2>Crawl a web page<a class="headerlink" href="#crawl-a-web-page" title="제목 주소">¶</a></h2>
+<p>The most simple way to use our program is with no arguments.
+Simply run:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">crawler</span> <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span>
+</pre></div>
 </div>
-<h2 id="P">P</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="_themes/sphinx_rtd_theme/demo_docs/source/index.html#payments.dotpay.DotpayProvider">payments.dotpay.DotpayProvider (내장 변수)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt>
-    Python Enhancement Proposals
-  </dt>
-
-      <dd><dl>
-        
-  <dt><a href="_themes/sphinx_rtd_theme/demo_docs/source/demo.html#index-0">PEP 287</a>
-  </dt>
-
-      </dl></dd>
-  </dl></td>
-</tr></table>
-
-<h2 id="R">R</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt>
-    RFC
-  </dt>
-
-      <dd><dl>
-        
-  <dt><a href="_themes/sphinx_rtd_theme/demo_docs/source/demo.html#index-1">RFC 2822</a>
-  </dt>
-
-      </dl></dd>
-  </dl></td>
-</tr></table>
-
+<p>to crawl a webpage.</p>
+</div>
+<div class="section" id="crawl-a-page-slowly">
+<h2>Crawl a page slowly<a class="headerlink" href="#crawl-a-page-slowly" title="제목 주소">¶</a></h2>
+<p>To add a delay to your crawler,
+use <code class="xref std std-option docutils literal"><span class="pre">-d</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">crawler</span> <span class="o">-</span><span class="n">d</span> <span class="mi">10</span> <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>This will wait 10 seconds between page fetches.</p>
+</div>
+<div class="section" id="crawl-only-your-blog">
+<h2>Crawl only your blog<a class="headerlink" href="#crawl-only-your-blog" title="제목 주소">¶</a></h2>
+<p>You will want to use the <code class="xref std std-option docutils literal"><span class="pre">-i</span></code> flag,
+which while ignore URLs matching the passed regex:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">crawler</span> <span class="o">-</span><span class="n">i</span> <span class="s2">&quot;^blog/&quot;</span> <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>This will only crawl pages that contain your blog URL.</p>
+<blockquote>
+<div><p>You will want to use the <code class="xref std std-option docutils literal"><span class="pre">-i</span></code> flag,
+which while ignore URLs matching the passed regex:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">crawler</span> <span class="o">-</span><span class="n">i</span> <span class="s2">&quot;pdf$&quot;</span> <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>This will ignore URLs that end in PDF.</p>
+</div></blockquote>
+</div>
+</div>
 
 
            </div>

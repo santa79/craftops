@@ -4,7 +4,7 @@ Installation
 
 At the command line::
 
-    sub-tree
+    easy_install crawler
 
 Or, if you have virtualenvwrapper installed:
 
@@ -12,5 +12,3 @@ Or, if you have virtualenvwrapper installed:
 
     mkvirtualenv crawler
     pip install crawler
-
-.. disqus::
