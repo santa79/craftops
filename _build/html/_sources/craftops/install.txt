@@ -4,7 +4,7 @@ Installation
 
 At the command line::
 
-    sub-tree
+    sub-tree in craftops
 
 Or, if you have virtualenvwrapper installed:
 
